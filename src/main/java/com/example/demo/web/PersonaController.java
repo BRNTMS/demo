@@ -21,9 +21,14 @@ public class PersonaController {
         return new ModelAndView("persone", "persone", personaService.recuperaPersone());
     }
 
+    @GetMapping("/persona/new")
+    public ModelAndView fornisciFormPersona(){
+        return new ModelAndView("creaPersona", "persona", new Persona());
+    }
+
     @PostMapping("/persona")
     public ModelAndView creaPersona(@ModelAttribute Persona persona){
         Persona personaSalvata = personaService.salvaPersona(persona);
-        return new ModelAndView("Redirect:/persone");
+        return new ModelAndView("redirect:/persone");
     }
 }

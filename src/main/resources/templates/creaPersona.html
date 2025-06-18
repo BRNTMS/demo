@@ -4,16 +4,19 @@
 </head>
 <body>
    <h1>CREA PERSONE</h1> 
-   <form th:action="@{'persona'}" th:object = "${persona}">
+   <form th:action="@{'/persona'}" method="post" th:object = "${persona}">
     <div>
+        <label>ID</label>
         <input th:field="*{id}">
     </div>
 
     <div>
+        <label>NOME</label>
         <input th:field="*{nome}">
     </div>
 
     <div>
+        <label>COGNOME</label>
         <input th:field="*{cognome}">
     </div>
 
