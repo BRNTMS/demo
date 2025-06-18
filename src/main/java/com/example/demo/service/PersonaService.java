@@ -15,4 +15,8 @@ public class PersonaService {
     public List<Persona> recuperaPersone(){
         return personaRepository.findAll();
     }
+
+    public Persona salvaPersona(Persona persona){
+        return personaRepository.save(persona);
+    }
 }

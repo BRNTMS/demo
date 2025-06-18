@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>CREA PERSONE</title>
+</head>
+<body>
+   <h1>CREA PERSONE</h1> 
+   <form th:action="@{'persona'}" th:object = "${persona}">
+    <div>
+        <input th:field="*{id}">
+    </div>
+
+    <div>
+        <input th:field="*{nome}">
+    </div>
+
+    <div>
+        <input th:field="*{cognome}">
+    </div>
+
+    <div>
+        <button type = "submit">SALVA</button>
+    </div>
+   </form>
+</body>

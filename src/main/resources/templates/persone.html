@@ -5,8 +5,8 @@
 <body>
     <ul>
         <li th:each = "persona : ${persone}">
-            <span th:text = "persona.nome"> </span>
-            <span th:text = "persona.cognome"> </span>
+            <span th:text = "${persona.nome}"> </span>
+            <span th:text = "${persona.cognome}"> </span>
         </li>
     </ul>
 </body>
