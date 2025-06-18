@@ -4,6 +4,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Persona {
+
     @Id
     private Long id;
     private String nome;
