@@ -15,3 +15,5 @@ spring:
   jpa:
     defer-datasource-initialization: true
     generate-ddl: true
+    hibernate:
+      ddl-auto: create
