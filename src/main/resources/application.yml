@@ -14,3 +14,4 @@ spring:
       mode: always
   jpa:
     defer-datasource-initialization: true
+    generate-ddl: true

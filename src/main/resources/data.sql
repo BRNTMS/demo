@@ -1,2 +1,2 @@
-INSERT INTO persona (nome, cognome) VALUES ('Bruno', 'Timeus');
-INSERT INTO persona (nome, cognome) VALUES ('Simone', 'Bierti');
+INSERT INTO persona (id, nome, cognome) VALUES (1,'Bruno', 'Timeus');
+INSERT INTO persona (id, nome, cognome) VALUES (2,'Simone', 'Bierti');
