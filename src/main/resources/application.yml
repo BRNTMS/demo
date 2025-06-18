@@ -9,3 +9,8 @@ spring:
     hikari:
       poolName: Hikari
       auto-commit: false
+  sql:
+    init:
+      mode: always
+  jpa:
+    defer-datasource-initialization: true
